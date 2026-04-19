@@ -1,36 +1,36 @@
 import { Facebook, Instagram, Twitter, Github, Mail, MapPin, Phone } from "lucide-react"
 
 const data = {
-  facebookLink: "https://facebook.com/digitalhub",
-  instaLink: "https://instagram.com/digitalhub",
-  twitterLink: "https://twitter.com/digitalhub",
-  githubLink: "https://github.com/digitalhub",
+  facebookLink: "https://facebook.com/zametno",
+  instaLink: "https://instagram.com/zametno",
+  twitterLink: "https://vk.com/zametno",
+  githubLink: "https://wa.me/74951234567",
   services: {
-    web: "/web-razrabotka",
-    mobile: "/mobilnye-prilozheniya",
-    design: "/ui-ux-dizajn",
-    marketing: "/digital-marketing",
+    web: "/svetovye-koroba",
+    mobile: "/obemnye-bukvy",
+    design: "/neon",
+    marketing: "/bannery",
   },
   about: {
     story: "/o-nas",
-    team: "/komanda",
+    team: "/primery-rabot",
     portfolio: "/portfolio",
     careers: "/vakansii",
   },
   help: {
     faqs: "/faq",
-    support: "/podderzhka",
+    support: "/kontakty",
     blog: "/blog",
   },
   contact: {
-    email: "hello@digitalhub.ru",
+    email: "info@zametno.ru",
     phone: "+7 (495) 123-45-67",
     address: "Москва, Россия",
   },
   company: {
-    name: "ДиджиталХаб",
+    name: "Заметно",
     description:
-      "Создаём цифровые продукты, которые помогают бизнесу расти. Веб-разработка, мобильные приложения и дизайн под ключ.",
+      "Изготавливаем вывески, световые конструкции и рекламные объекты. Собственное производство, монтаж под ключ по всей России.",
   },
 }
 
@@ -43,16 +43,16 @@ const socialLinks = [
 
 const aboutLinks = [
   { text: "О нас", href: data.about.story },
-  { text: "Команда", href: data.about.team },
+  { text: "Примеры работ", href: data.about.team },
   { text: "Портфолио", href: data.about.portfolio },
   { text: "Вакансии", href: data.about.careers },
 ]
 
 const serviceLinks = [
-  { text: "Веб-разработка", href: data.services.web },
-  { text: "Мобильные приложения", href: data.services.mobile },
-  { text: "UI/UX Дизайн", href: data.services.design },
-  { text: "Digital-маркетинг", href: data.services.marketing },
+  { text: "Световые короба", href: data.services.web },
+  { text: "Объёмные буквы", href: data.services.mobile },
+  { text: "Неоновые вывески", href: data.services.design },
+  { text: "Баннеры и таблички", href: data.services.marketing },
 ]
 
 const helpfulLinks = [
@@ -396,7 +396,7 @@ export default function Footer() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="brand-logo">
-                <div className="brand-icon">DH</div>
+                <div className="brand-icon">З</div>
                 <span className="brand-name">{data.company.name}</span>
               </div>
               <p className="brand-description">{data.company.description}</p>
@@ -470,7 +470,7 @@ export default function Footer() {
 
           <div className="footer-bottom">
             <p className="copyright">
-              2025 <a href="https://poehali.dev">poehali.dev</a>
+              2025 <a href="/">Заметно</a>
             </p>
             <div className="footer-legal">
               <a href="/privacy">Политика конфиденциальности</a>

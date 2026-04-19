@@ -6,7 +6,7 @@ const PhotographyBanner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const texts = ["БИЗНЕС.", "БРЕНДЫ."]
+  const texts = ["ВЫВЕСКИ.", "БРЕНДЫ."]
 
   useEffect(() => {
     const typeSpeed = isDeleting ? 40 : 100
@@ -828,7 +828,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="left-part">
               <h1>
                 <span className="d-flex">
-                  {["С", "О", "З", "Д", "А", "Ё", "М"].map((char, index) => (
+                  {["З", "А", "М", "Е", "Т", "Н", "О"].map((char, index) => (
                     <span key={index} className="char tracking-tighter" style={{ animationDelay: `${index * 0.08}s` }}>
                       {char === " " ? "\u00A0" : char}
                     </span>
@@ -837,10 +837,10 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Помогаем предпринимателям запускать цифровые продукты быстрее с помощью современных технологий
+                Изготавливаем вывески, световые буквы и рекламные конструкции — чтобы ваш бизнес был виден издалека
               </p>
               <a href="#cta" className="book-link">
-                <span className="linktext tracking-tighter text-3xl">Начать проект</span>
+                <span className="linktext tracking-tighter text-3xl">Заказать вывеску</span>
                 <span className="arrow">
                   <span></span>
                 </span>
@@ -882,48 +882,53 @@ const PhotographyBanner: React.FC = () => {
                   style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
                 />
               </div>
+              <img
+                src="https://cdn.poehali.dev/projects/f50b735d-b614-4991-8c93-cfa86f66e259/files/85c9e1a3-7eaa-4ff2-a56c-edc4e98a9563.jpg"
+                alt="Вывески Заметно"
+                className="hero-image"
+              />
             </div>
           </section>
 
           <section className="features-section">
             <div className="features-container">
               <div className="features-content">
-                <h2>Почему выбирают нас?</h2>
+                <h2>Почему выбирают <span className="highlight">нас?</span></h2>
               </div>
               <ul className="features-list">
                 <li className="feature-item">
                   <div className="feature-icon">01</div>
                   <div className="feature-text">
-                    <h3>Опытная команда</h3>
+                    <h3>Собственное производство</h3>
                     <p className="font-light tracking-wider">
-                      Более 10 лет опыта в разработке цифровых продуктов для бизнеса любого масштаба
+                      Изготавливаем вывески на своём оборудовании — никаких посредников, полный контроль качества
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">02</div>
                   <div className="feature-text">
-                    <h3>Современные технологии</h3>
+                    <h3>Широкий ассортимент</h3>
                     <p className="tracking-wider">
-                      Используем передовые инструменты и фреймворки для создания быстрых и надёжных решений
+                      Световые короба, объёмные буквы, неон, таблички, баннеры и любые нестандартные конструкции
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">03</div>
                   <div className="feature-text">
-                    <h3>Индивидуальный подход</h3>
+                    <h3>Монтаж под ключ</h3>
                     <p className="tracking-wider">
-                      Каждый проект уникален — мы адаптируем решения под ваши конкретные задачи и цели
+                      Берём на себя всё — от замеров и дизайна до согласования и установки на объекте
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">04</div>
                   <div className="feature-text">
-                    <h3>Поддержка 24/7</h3>
+                    <h3>Гарантия на работы</h3>
                     <p className="tracking-wider">
-                      Обеспечиваем техническую поддержку и сопровождение на всех этапах работы
+                      Даём гарантию на все изделия и монтаж — ваша вывеска будет служить долго и надёжно
                     </p>
                   </div>
                 </li>
@@ -937,73 +942,73 @@ const PhotographyBanner: React.FC = () => {
               <div className="testimonials-marquee">
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Заказали световой короб для нашего магазина — сделали быстро, смонтировали аккуратно. Клиенты сразу стали лучше находить нас!"
                   </p>
                   <div className="testimonial-author">
                     <div className="author-avatar">АС</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Алексей Соколов</h4>
+                      <p>Владелец магазина одежды</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Объёмные буквы для нашего кафе получились просто огонь. Дизайнер предложил классное решение, всё согласовали за день."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">НП</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Наталья Петрова</h4>
+                      <p>Владелец кафе «Уютное»</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Работаем с Заметно уже три года — делают вывески для всей нашей сети. Качество стабильное, сроки соблюдают."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ДМ</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Дмитрий Морозов</h4>
+                      <p>Директор торговой сети</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Заказали световой короб для нашего магазина — сделали быстро, смонтировали аккуратно. Клиенты сразу стали лучше находить нас!"
                   </p>
                   <div className="testimonial-author">
                     <div className="author-avatar">АС</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Алексей Соколов</h4>
+                      <p>Владелец магазина одежды</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Объёмные буквы для нашего кафе получились просто огонь. Дизайнер предложил классное решение, всё согласовали за день."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">НП</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Наталья Петрова</h4>
+                      <p>Владелец кафе «Уютное»</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Работаем с Заметно уже три года — делают вывески для всей нашей сети. Качество стабильное, сроки соблюдают."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ДМ</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Дмитрий Морозов</h4>
+                      <p>Директор торговой сети</p>
                     </div>
                   </div>
                 </div>
@@ -1013,16 +1018,16 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="cta-section" id="cta">
             <div className="cta-container">
-              <h2 className="cta-title text-center">Готовы начать?</h2>
+              <h2 className="cta-title text-center">Будьте заметны!</h2>
               <p className="cta-subtitle">
-                Присоединяйтесь к сотням компаний, которые уже трансформировали свой бизнес. Ваш путь к успеху начинается здесь.
+                Закажите вывеску, которая привлекает клиентов круглосуточно. Замер, дизайн и монтаж — всё под ключ.
               </p>
               <div className="cta-buttons">
                 <a href="#" className="cta-button">
-                  Обсудить проект
+                  Заказать вывеску
                 </a>
                 <a href="#" className="cta-button secondary">
-                  Посмотреть кейсы
+                  Смотреть примеры
                 </a>
               </div>
             </div>
